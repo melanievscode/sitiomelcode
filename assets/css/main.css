@@ -424,4 +424,84 @@ input[type="submit"]:hover{
     z-index: -1;
     opacity: 0.0;
 }
+@media(max-width:768px){
+    .muestras{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/*pagina de servicios*/
+.servicios{
+    background-color: #000000;
+    padding: 50px;
+}
+.servicios h1{
+    font-size: 48px;
+    color: aqua;
+}
+.servicios p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
 
+.icons-servicios{
+    width: 20px;
+    padding-top: 20px;
+    color: aqua;
+}
+.servicios .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 10%;
+    align-items: center;
+}
+@media(max-width:768px){
+    .servicios .contenedor{
+        grid-template-columns: 1fr;
+    }
+}
+
+.contenedor-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: center;
+    background: #f9fafb;
+    padding: 4rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+} 
+.contenedor-servicios p{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 20px;
+}
+.servicio{
+    padding: 20px;
+    font-size: 50px;
+    border: #000000 solid 1px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.servicio p{
+    font-size: 15px;
+    color: black;
+    padding-top: 10px;
+}
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.ic-servicios{
+    width: 100px;
+    margin-bottom: 1rem;
+    color: magenta
+}
+.inicial{
+    color: white;
+}
