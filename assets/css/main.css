@@ -1,6 +1,11 @@
 body{
     margin:0 ;
 }
+style
+    a {
+      text-decoration: none;
+    }
+style
 /*propiedades personalizadas*/
 :root{
     --primary-color:#FFFF00;
@@ -184,7 +189,7 @@ body {
 }
 
 /* ======== SLOGAN ======== */
-.center {
+.center{
   text-align: center;
   margin: 2rem 0;
   color: #000000;
@@ -297,29 +302,23 @@ footer a:hover{
   grid-template-columns: auto auto;
   height: 60px;
   padding: 10px 30px;
-  background-color: var(--third-color);
-  color: rgb(0, 0, 0);
-}
-.copyright p{
-  color: #000000;
+  background-color: aqua;
+  color: black;
 }
 
 .col-3 p{
   font-size: 15px;
+  color: #000000;
 }
-
-
 
 /*pagina de contacto*/
 
 .contactanos{
     background-color: #000000;
-    color: rgb(255, 255, 255);
     padding: 80px;
 }
-.contactanos p{
-  color: white;
-}
+
+
 .contactanos h1{
     font-size: 48px;
     color: aqua;
@@ -365,8 +364,6 @@ input[type="submit"]{
     font-weight: 600;
     padding: 10px;
     border-radius: 10px;
-    
-    
 }
 input[type="submit"]:hover{
     
@@ -377,7 +374,54 @@ input[type="submit"]:hover{
     padding: 10px;
     border-radius: 10px;
 }
+
+/*pagina de portafolio*/
+.intro{
+    background-color: yellow;
+    padding: 2rem 0;
+    }
 .center{
-  position: relative;
+    text-align: center;
+    margin: 2rem 0;
+    color: #000000;
+    padding: 0 3rem 0 10%;
+}
+.portafolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem 10%;
+    font-family: poppins, sans-serif;
+}
+.portafolio-img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.portafolio p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.portafolio h1{
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+    padding-bottom: 20px;
+}
+.muestras{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.muestras :hover{
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.0;
 }
 
